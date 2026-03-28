@@ -11,7 +11,7 @@ const ContactSection = () => {
     e.preventDefault();
     const subject = encodeURIComponent("Enquiry from Website");
     const body = encodeURIComponent(`Name: ${formData.name}\nPhone: ${formData.phone}\n\n${formData.message}`);
-    window.open(`mailto:universalfireservice999@gmail.com
+    window.open(`mailto:universalfireservices999@gmail.com
 ?subject=${subject}&body=${body}`);
   };
 
@@ -42,13 +42,13 @@ const ContactSection = () => {
             <div className="card-glass rounded-2xl p-8">
               <h3 className="font-display text-2xl text-foreground mb-6">CONTACT DETAILS</h3>
               <div className="space-y-6">
-                <a href="mailto:universalfireservice999@gmail.com" className="flex items-center gap-4 group">
+                <a href="mailto:universalfireservices999@gmail.com" className="flex items-center gap-4 group">
                   <div className="w-12 h-12 rounded-xl bg-primary/10 flex items-center justify-center group-hover:bg-primary/20 transition-colors">
                     <Mail className="w-5 h-5 text-primary" />
                   </div>
                   <div>
                     <span className="text-sm text-muted-foreground">Email Us</span>
-                    <span className="block text-foreground">universalfireservice999@gmail.com</span>
+                    <span className="block text-foreground">universalfireservices999@gmail.com</span>
                   </div>
                 </a>
                 <a href="tel:+919642469090 ,/ +919704349803" className="flex items-center gap-4 group">
@@ -67,8 +67,8 @@ const ContactSection = () => {
                   <div>
                     <span className="text-sm text-muted-foreground">Visit Us</span>
                     <span className="block text-foreground text-sm">
-                      Head Office :Hyderabad 
-                      Branch Office :Warangal , Hanumakonda
+                      Office Address : 2-5-70, Nuvullabanda Jaipuri colony Nagole Hyderabad 500068
+                      Branch Office Address :Warangal , Hanumakonda
                     </span>
                   </div>
                 </div>

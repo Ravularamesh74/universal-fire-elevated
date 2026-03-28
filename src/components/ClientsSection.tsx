@@ -1,10 +1,14 @@
 import { motion, useInView } from "framer-motion";
 import { useRef } from "react";
+import { Users, Building2, Factory, Landmark, Hospital, GraduationCap } from "lucide-react";
 
-const clientGroups = [
-  ["Ananda Group", "Andhra Sugars Ltd", "Avanti Group", "Ashok Leyland", "Adani Oil Company", "Bajaj Automotive Ltd", "B.P.C.L", "Britannia"],
-  ["B.S.N.L", "Continental Coffee Ltd", "DLF", "Eicher Motors", "ESSAR Bunks", "Godrej Group", "H.P.C.L", "Jindal Company"],
-  ["KIMS Amalapuram", "Falcon Marine", "Growel Group", "Delta Sugars", "Delta Paper Mill", "Nandi Pipes", "Jai Vijaya Paper Mills", "Big C"],
+const industries = [
+  { icon: Building2, label: "Corporate Offices" },
+  { icon: Factory, label: "Manufacturing Plants" },
+  { icon: Landmark, label: "Government Buildings" },
+  { icon: Hospital, label: "Hospitals & Healthcare" },
+  { icon: GraduationCap, label: "Educational Institutions" },
+  { icon: Users, label: "Residential Complexes" },
 ];
 
 const ClientsSection = () => {
@@ -23,29 +27,55 @@ const ClientsSection = () => {
           <h2 className="font-display text-4xl sm:text-5xl lg:text-6xl mt-3 text-foreground">
             TRUSTED BY <span className="fire-gradient-text">200+ CLIENTS</span>
           </h2>
+          <p className="text-muted-foreground mt-4 max-w-2xl mx-auto">
+            We proudly serve clients across diverse sectors, delivering reliable fire and industrial safety solutions to organizations of all sizes.
+          </p>
         </motion.div>
 
-        {/* Scrolling marquee rows */}
-        <div className="space-y-4">
-          {clientGroups.map((group, gi) => (
-            <div key={gi} className="relative overflow-hidden">
-              <motion.div
-                animate={{ x: gi % 2 === 0 ? ["0%", "-50%"] : ["-50%", "0%"] }}
-                transition={{ duration: 30 + gi * 5, repeat: Infinity, ease: "linear" }}
-                className="flex gap-4 w-max"
-              >
-                {[...group, ...group, ...group, ...group].map((name, i) => (
-                  <div
-                    key={`${name}-${i}`}
-                    className="card-glass rounded-xl px-6 py-4 whitespace-nowrap text-sm text-muted-foreground hover:text-foreground hover:border-primary/30 transition-colors shrink-0"
-                  >
-                    {name}
-                  </div>
-                ))}
-              </motion.div>
-            </div>
+        {/* Client sectors grid */}
+        <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-4">
+          {industries.map((item, i) => (
+            <motion.div
+              key={item.label}
+              initial={{ opacity: 0, y: 20 }}
+              animate={inView ? { opacity: 1, y: 0 } : {}}
+              transition={{ delay: i * 0.1 }}
+              className="card-glass rounded-2xl p-6 text-center group hover:border-primary/30 transition-all"
+            >
+              <div className="w-14 h-14 mx-auto rounded-full bg-primary/10 flex items-center justify-center mb-4 group-hover:bg-primary/20 transition-colors">
+                <item.icon className="w-7 h-7 text-primary" />
+              </div>
+              <span className="text-sm text-muted-foreground group-hover:text-foreground transition-colors">
+                {item.label}
+              </span>
+            </motion.div>
           ))}
         </div>
+
+        {/* Stats row */}
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          animate={inView ? { opacity: 1, y: 0 } : {}}
+          transition={{ delay: 0.6 }}
+          className="mt-12 card-glass rounded-2xl p-8 flex flex-wrap justify-center gap-12 text-center"
+        >
+          <div>
+            <span className="font-display text-4xl text-foreground">200+</span>
+            <span className="block text-sm text-muted-foreground mt-1">Happy Clients</span>
+          </div>
+          <div>
+            <span className="font-display text-4xl text-foreground">100%</span>
+            <span className="block text-sm text-muted-foreground mt-1">Referral Based</span>
+          </div>
+          <div>
+            <span className="font-display text-4xl text-foreground">11+</span>
+            <span className="block text-sm text-muted-foreground mt-1">Years of Trust</span>
+          </div>
+          <div>
+            <span className="font-display text-4xl text-foreground">All over Telangana</span>
+            <span className="block text-sm text-muted-foreground mt-1">Service Coverage</span>
+          </div>
+        </motion.div>
       </div>
     </section>
   );
