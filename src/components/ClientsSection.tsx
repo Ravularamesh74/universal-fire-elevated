@@ -21,7 +21,7 @@ const ClientsSection = () => {
         >
           <span className="text-sm text-primary font-semibold tracking-widest uppercase">Our Clients</span>
           <h2 className="font-display text-4xl sm:text-5xl lg:text-6xl mt-3 text-foreground">
-            TRUSTED BY <span className="fire-gradient-text">1675+ CLIENTS</span>
+            TRUSTED BY <span className="fire-gradient-text">200+ CLIENTS</span>
           </h2>
         </motion.div>
 

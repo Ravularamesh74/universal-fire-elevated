@@ -2,35 +2,46 @@ import { motion, useInView } from "framer-motion";
 import { useRef } from "react";
 import { FileCheck, PenTool, Wrench, Siren, ClipboardList, ArrowRight } from "lucide-react";
 
+import nocImg from "@/assets/provisinal& final Noc Certificates.jpg";
+import drawingsImg from "@/assets/firesafetydrawings&documentation.webp";
+import supplyImg from "@/assets/system supply and erection copy.webp";
+import mockDrillImg from "@/assets/fire Mock Drill and inspection.jpg";
+import haraImg from "@/assets/H.A.R.A report and on site copy.jpg";
+
 const services = [
   {
     icon: FileCheck,
     title: "Provisional & Final NOC Certificates",
     desc: "We assist in preparing and obtaining Provisional and Final NOCs. Our team ensures full compliance with fire department regulations.",
+    image: nocImg,
   },
   {
     icon: PenTool,
     title: "Fire Safety Drawings & Documentation",
     subtitle: "As per N.B.C & I.F.S.C Regulations",
     desc: "We create custom fire safety layouts as per legal standards. All documentation is tailored for seamless approval processes.",
+    image: drawingsImg,
   },
   {
     icon: Wrench,
     title: "System Supply, Erection & Commissioning",
     subtitle: "As Per IS: 2190 Regulations & T.A.C Manual",
     desc: "We supply, install, and commission fire safety systems efficiently. Designs are based on accurate pressure and fluid mechanics.",
+    image: supplyImg,
   },
   {
     icon: Siren,
     title: "Fire Mock Drills & Inspection Assistance",
     subtitle: "As per OHSAS 18001 Standards",
     desc: "We conduct mock drills to test fire readiness and response. Get expert guidance during official inspections and audits.",
+    image: mockDrillImg,
   },
   {
     icon: ClipboardList,
     title: "H.A.R.A Report & On-Site Emergency Plan",
     subtitle: "As Per Inspector of Factories",
     desc: "We prepare detailed H.A.R.A. reports and emergency plans. Training programs ensure your team is certified and ready.",
+    image: haraImg,
   },
 ];
 
@@ -69,18 +80,24 @@ const ServicesSection = () => {
               animate={inView ? { opacity: 1, y: 0 } : {}}
               transition={{ delay: i * 0.1 }}
               whileHover={{ y: -8, transition: { duration: 0.3 } }}
-              className="card-glass rounded-2xl p-8 group hover:border-primary/30 transition-all duration-300 relative overflow-hidden"
+              className="card-glass rounded-2xl group hover:border-primary/30 transition-all duration-300 relative overflow-hidden"
             >
-              {/* Hover glow */}
-              <div className="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-500">
-                <div className="absolute -top-10 -right-10 w-40 h-40 bg-primary/10 rounded-full blur-2xl" />
+              {/* Service image */}
+              <div className="relative h-48 overflow-hidden">
+                <img
+                  src={service.image}
+                  alt={service.title}
+                  loading="lazy"
+                  className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-background via-background/40 to-transparent" />
+                <div className="absolute bottom-4 left-4 w-12 h-12 rounded-xl fire-gradient-bg flex items-center justify-center group-hover:shadow-lg group-hover:shadow-primary/20 transition-shadow">
+                  <service.icon className="w-6 h-6 text-primary-foreground" />
+                </div>
               </div>
 
-              <div className="relative">
-                <div className="w-14 h-14 rounded-xl fire-gradient-bg flex items-center justify-center mb-6 group-hover:shadow-lg group-hover:shadow-primary/20 transition-shadow">
-                  <service.icon className="w-7 h-7 text-primary-foreground" />
-                </div>
-
+              {/* Content */}
+              <div className="p-6">
                 <h3 className="font-display text-2xl text-foreground mb-1">{service.title}</h3>
                 {service.subtitle && (
                   <span className="text-xs text-primary/80 font-medium">{service.subtitle}</span>

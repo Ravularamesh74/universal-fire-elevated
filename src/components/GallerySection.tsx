@@ -8,7 +8,11 @@ import gallery3 from "@/assets/gallery-3.jpg";
 import gallery4 from "@/assets/gallery-4.jpg";
 import gallery5 from "@/assets/gallery-5.jpg";
 import gallery6 from "@/assets/gallery-6.jpg";
-
+import annualmaintenance from "@/assets/annualmaintencecontracts.jpeg";
+import firdetection from "@/assets/fireditectionsystem.jpeg";
+import firesafetyaudit from "@/assets/firesafetyaudit.jpeg";
+import firesprinkler from "@/assets/firesprinklersystem.jpeg";
+import firesuspension from "@/assets/firesuspensionsystem.jpeg";
 const images = [
   { src: gallery1, title: "Fire Suppression System Installation", category: "Installation" },
   { src: gallery2, title: "Fire Mock Drill Training", category: "Mock Drills" },
@@ -16,6 +20,11 @@ const images = [
   { src: gallery4, title: "Fire Hydrant System", category: "Equipment" },
   { src: gallery5, title: "Fire Safety Documentation", category: "Documentation" },
   { src: gallery6, title: "Fire Alarm Control Panel", category: "Equipment" },
+  { src: annualmaintenance, title: "Annual Maintenance", category: "Mock Drills" },
+  { src: firdetection, title: "Fire Detection", category: "Mock Drills" },
+  { src: firesafetyaudit, title: "Fire Safety Audit", category: "Mock Drills" },
+  { src: firesprinkler, title: "Fire Sprinkler", category: "Mock Drills" },
+  { src: firesuspension, title: "Fire Suspension", category: "Mock Drills" },
 ];
 
 const categories = ["All", "Installation", "Mock Drills", "Equipment", "Documentation"];

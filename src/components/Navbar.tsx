@@ -54,7 +54,7 @@ const Navbar = () => {
             <img src={logo} alt="Universal Fire Services" className="h-12 w-12 object-contain" />
             <div className="hidden sm:block">
               <span className="font-display text-xl tracking-wide text-foreground">UNIVERSAL FIRE</span>
-              <span className="block text-xs text-muted-foreground tracking-widest">SERVICES PVT. LTD.</span>
+              <span className="block text-xs text-muted-foreground tracking-widest">SAFETY & SERVICES</span>
             </div>
           </a>
 

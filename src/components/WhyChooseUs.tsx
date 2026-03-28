@@ -25,7 +25,7 @@ const WhyChooseUs = () => {
         >
           <span className="text-sm text-primary font-semibold tracking-widest uppercase">Why Choose Us</span>
           <h2 className="font-display text-4xl sm:text-5xl lg:text-6xl mt-3 text-foreground">
-            PARTNER WITH<br /><span className="fire-gradient-text">UNIVERSAL FIRE SERVICES</span>
+            PARTNER WITH<br /><span className="fire-gradient-text">UNIVERSAL FIRE SAFETY & SERVICES</span>
           </h2>
           <p className="text-muted-foreground mt-4 max-w-2xl mx-auto">
             With over two decades of hands-on experience, we deliver fire and industrial safety solutions you can rely on.

@@ -55,7 +55,7 @@ const AboutSection = () => {
             transition={{ duration: 0.6, delay: 0.2 }}
           >
             <p className="text-muted-foreground leading-relaxed text-lg mb-8">
-              Universal Fire Services Pvt. Ltd. is a leading provider of Fire and Industrial Safety solutions across India. Established in 2004, we have grown through trust and referrals to become one of the largest service providers with over 1675 clients across various sectors.
+              Universal Fire Services is a leading provider of Fire and Industrial Safety solutions across India. Established in 2015, we have grown through trust and referrals to become one of the largest service providers with over 200+ clients across various sectors.
             </p>
             <p className="text-muted-foreground leading-relaxed mb-10">
               Our services cover the full spectrum—from Provisional and Final NOC certifications to fire safety system installation, mock drills, and on-site emergency planning.
@@ -83,7 +83,7 @@ const AboutSection = () => {
             </div>
 
             <div className="flex flex-wrap gap-4">
-              {["Qualified Engineers", "Pan-India Service", "100% Referral Based", "Since 2004"].map((item) => (
+              {["Qualified Engineers", "Pan-India Service", "100% Referral Based", "Since 2015"].map((item) => (
                 <span key={item} className="flex items-center gap-2 text-sm text-foreground bg-muted px-4 py-2 rounded-full">
                   <CheckCircle2 className="w-4 h-4 text-primary" /> {item}
                 </span>
@@ -99,10 +99,10 @@ const AboutSection = () => {
             className="grid grid-cols-2 gap-4"
           >
             {[
-              { value: 20, suffix: "+", label: "Years Experience", color: "fire-gradient-bg" },
-              { value: 1675, suffix: "+", label: "Happy Clients", color: "bg-secondary" },
-              { value: 5000, suffix: "+", label: "Projects Done", color: "bg-muted" },
-              { value: 98, suffix: "%", label: "Client Satisfaction", color: "fire-gradient-bg" },
+              { value: 11, suffix: "+", label: "Years Experience", color: "fire-gradient-bg" },
+              { value: 200 , suffix: "+", label: "Happy Clients", color: "bg-secondary" },
+              { value: 200, suffix: "+", label: "Projects Done", color: "bg-muted" },
+              { value: 100, suffix: "%", label: "Client Satisfaction", color: "fire-gradient-bg" },
             ].map((stat, i) => (
               <div
                 key={stat.label}

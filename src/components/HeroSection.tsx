@@ -3,8 +3,8 @@ import { Shield, Award, Flame } from "lucide-react";
 import heroBg from "@/assets/hero-bg.jpg";
 
 const stats = [
-  { icon: Flame, value: "20+", label: "Years of Expertise" },
-  { icon: Shield, value: "1675+", label: "Clients Served" },
+  { icon: Flame, value: "11+", label: "Years of Expertise" },
+  { icon: Shield, value: "200+", label: "Clients Served" },
   { icon: Award, value: "100%", label: "Client Referrals" },
 ];
 
@@ -50,17 +50,16 @@ const HeroSection = () => {
             transition={{ delay: 0.3 }}
             className="inline-block px-4 py-1.5 border border-primary/40 rounded-full text-sm text-primary font-medium tracking-wider mb-6"
           >
-            UNIVERSAL FIRE SERVICES PVT. LTD.
+            UNIVERSAL FIRE SAFETY SERVICES
           </motion.span>
 
           <h1 className="text-5xl sm:text-6xl lg:text-8xl font-display leading-[0.9] tracking-tight mb-6">
-            TRUSTED FIRE &<br />
-            <span className="fire-gradient-text">INDUSTRIAL SAFETY</span><br />
-            EXPERTS SINCE 2004
+            TRUSTED FIRE & INDUSTRIAL SAFETY
+            <span className="fire-gradient-text">EXPERTS SINCE 2015</span>
           </h1>
 
           <p className="text-lg text-muted-foreground max-w-xl mb-10 font-light leading-relaxed">
-            As a pioneer in fire and industrial safety since 2004, we bring unmatched expertise and reliability. Serving 1675+ clients across India with compliance, protection, and peace of mind.
+            As a pioneer in fire and industrial safety since 2015, we bring unmatched expertise and reliability. Serving 200+ clients across Telangana with compliance, protection, and peace of mind.
           </p>
 
           <div className="flex flex-wrap gap-4">

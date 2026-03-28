@@ -8,10 +8,10 @@ const Footer = () => (
         <div>
           <div className="flex items-center gap-3 mb-4">
             <img src={logo} alt="Universal Fire" className="h-10 w-10" loading="lazy" />
-            <span className="font-display text-xl text-foreground">UNIVERSAL FIRE</span>
+            <span className="font-display text-xl text-foreground">UNIVERSAL FIRE & SAFETY SERVICES</span>
           </div>
           <p className="text-muted-foreground text-sm leading-relaxed">
-            With over two decades of trusted expertise, Universal Fire Services is committed to delivering end-to-end fire and industrial safety solutions.
+            With over two decades of trusted expertise, Universal Fire & Safety Services is committed to delivering end-to-end fire and industrial safety solutions.
           </p>
         </div>
 
@@ -40,10 +40,10 @@ const Footer = () => (
 
       <div className="border-t border-border pt-8 flex flex-col sm:flex-row items-center justify-between gap-4">
         <p className="text-muted-foreground text-sm">
-          © 2025 Universal Fire Services Private Limited. All Rights Reserved.
+          © 2015 Universal Fire & Safety Services. All Rights Reserved.
         </p>
         <div className="flex items-center gap-1 text-muted-foreground text-sm">
-          <Flame className="w-4 h-4 text-primary" /> Protecting India Since 2004
+          <Flame className="w-4 h-4 text-primary" /> Protecting India Since 2015
         </div>
       </div>
     </div>
