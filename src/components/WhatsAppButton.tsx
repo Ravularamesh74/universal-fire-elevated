@@ -60,7 +60,7 @@ const WhatsAppButton = () => {
         </AnimatePresence>
 
         <motion.a
-          href="https://wa.me/919440333557?text=Hello%2C%20I%20need%20fire%20safety%20consultation"
+          href="https://wa.me/+91964469090?text=Hello%2C%20I%20need%20fire%20safety%20consultation"
           target="_blank"
           rel="noopener noreferrer"
           whileHover={{ scale: 1.1 }}

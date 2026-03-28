@@ -29,11 +29,11 @@ const Navbar = () => {
       {/* Top bar */}
       <div className="hidden md:flex items-center justify-between px-8 py-2 bg-navy-deep border-b border-border text-sm">
         <div className="flex items-center gap-6 text-muted-foreground">
-          <a href="mailto:contact@universalfire.in" className="flex items-center gap-2 hover:text-primary transition-colors">
-            <Mail className="w-3.5 h-3.5" /> contact@universalfire.in
+          <a href="mailto:universalfireservice999@gmail.com" className="flex items-center gap-2 hover:text-primary transition-colors">
+            <Mail className="w-3.5 h-3.5" /> universalfireservice999@gmail.com
           </a>
-          <a href="tel:+919440333557" className="flex items-center gap-2 hover:text-primary transition-colors">
-            <Phone className="w-3.5 h-3.5" /> +91-9440333557
+          <a href="tel:+91964469090 / +919704349803" className="flex items-center gap-2 hover:text-primary transition-colors">
+            <Phone className="w-3.5 h-3.5" /> +91-964469090 / +91-9704349803
           </a>
         </div>
         <div className="flex items-center gap-4 text-muted-foreground">

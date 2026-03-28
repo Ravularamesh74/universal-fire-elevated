@@ -41,22 +41,22 @@ const ContactSection = () => {
             <div className="card-glass rounded-2xl p-8">
               <h3 className="font-display text-2xl text-foreground mb-6">CONTACT DETAILS</h3>
               <div className="space-y-6">
-                <a href="mailto:contact@universalfire.in" className="flex items-center gap-4 group">
+                <a href="mailto:universalfireservice999@gmail.com" className="flex items-center gap-4 group">
                   <div className="w-12 h-12 rounded-xl bg-primary/10 flex items-center justify-center group-hover:bg-primary/20 transition-colors">
                     <Mail className="w-5 h-5 text-primary" />
                   </div>
                   <div>
                     <span className="text-sm text-muted-foreground">Email Us</span>
-                    <span className="block text-foreground">contact@universalfire.in</span>
+                    <span className="block text-foreground">universalfireservice999@gmail.com</span>
                   </div>
                 </a>
-                <a href="tel:+919440333557" className="flex items-center gap-4 group">
+                <a href="tel:+91964469090 ,/ +919704349803" className="flex items-center gap-4 group">
                   <div className="w-12 h-12 rounded-xl bg-primary/10 flex items-center justify-center group-hover:bg-primary/20 transition-colors">
                     <Phone className="w-5 h-5 text-primary" />
                   </div>
                   <div>
                     <span className="text-sm text-muted-foreground">Call Us</span>
-                    <span className="block text-foreground">+91-9440333557</span>
+                    <span className="block text-foreground">+91-964469090 / +919704349803</span>
                   </div>
                 </a>
                 <div className="flex items-start gap-4">
@@ -66,7 +66,8 @@ const ContactSection = () => {
                   <div>
                     <span className="text-sm text-muted-foreground">Visit Us</span>
                     <span className="block text-foreground text-sm">
-                      # 24-4-3, Flat No. 301, Sai Aditya Pleasant, Kallakurivari Street, Sriramapuram, BHIMAVARAM – 534202, W.G.Dt., (A.P)
+                      Head Office :Hyderabad 
+                      Branch Office :Warangal , Hanumakonda
                     </span>
                   </div>
                 </div>
@@ -75,12 +76,12 @@ const ContactSection = () => {
 
             {/* Quick call CTA */}
             <a
-              href="tel:+919849133147"
+              href="tel:+91964469090 / +919704349803"
               className="block card-glass rounded-2xl p-8 fire-gradient-bg text-center group hover:scale-[1.02] transition-transform"
             >
               <Phone className="w-10 h-10 text-primary-foreground mx-auto mb-3" />
               <span className="font-display text-2xl text-primary-foreground block">HAVE ANY QUESTIONS?</span>
-              <span className="text-primary-foreground/80 text-lg">+91-9849133147</span>
+              <span className="text-primary-foreground/80 text-lg">+91-964469090 / +91-9704349803</span>
             </a>
           </motion.div>
 
