@@ -2,6 +2,7 @@ import { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { Menu, X, Phone, Mail } from "lucide-react";
 import logo from "@/assets/logo.png";
+import { products } from "./product";
 
 const navLinks = [
   { label: "Home", href: "#home" },
@@ -9,6 +10,7 @@ const navLinks = [
   { label: "Services", href: "#services" },
   { label: "Industries", href: "#industries" },
   { label: "Gallery", href: "#gallery" },
+  { label: "Products", href: "/products" }, // Updated to navigate to GalleryPage
   { label: "Clients", href: "#clients" },
   { label: "Testimonials", href: "#testimonials" },
   { label: "Contact", href: "#contact" },
