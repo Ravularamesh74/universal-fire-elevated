@@ -180,14 +180,14 @@ This project is licensed under the **MIT License**.
 ## 👨‍💻 Author
 
 **Ravula Ramesh**
-MCA Graduate | Full Stack Developer
+MCA Graduate | Full Stack Developer | Web Developer | MERN Stack Developer| React Developer|
 
 ---
 
 ## 📞 Contact
 
-📧 Email: [your-email@example.com](mailto:your-email@example.com)
-📱 Phone: +91-XXXXXXXXXX
+📧 Email: [ravularamesh74@gmail.com](mailto:ravularamesh74@gmail.com)
+📱 Phone: +91-9640059577
 
 ---
 
